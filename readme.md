@@ -70,7 +70,7 @@
 
 
 
-###数据去重代码
+### 数据去重代码
 mllm_multi_subject_data 中的数据是来源于多个获取批次，因此存在数据重复的情况，为了进行较好的去重，可以参考下方的多线程去重代码。
 ```python
 bash scripts/remove_duplicate.sh
