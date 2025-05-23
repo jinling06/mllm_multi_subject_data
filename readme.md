@@ -12,7 +12,7 @@
 里面包含了一些清洗后的json文件，大多原始数据为tsv和html的格式，具体每个来源的数据格式可参考下面的清洗代码。
 
 ## 数据清洗代码说明
-此项目包括mllm_multi_subject_data清洗代码、一些公开多模态解题数据集清洗代码、数据去重代码。为了方便大家使用，下面针对每一部分做简单的介绍。
+此项目包括 [mllm_multi_subject_data](https://modelscope.cn/datasets/callMeWhy/mllm_multi_subject_data/files) 清洗代码、一些公开多模态解题数据集清洗代码、数据去重代码。为了方便大家使用，下面针对每一部分做简单的介绍。
 
 
 ### 公开数据集
@@ -89,3 +89,9 @@ def jaccard_similarity(set_a, set_b):
     return intersection / union
 ```
 可以根据具体的数据设置不同的阈值。
+
+## 快速实践
+可以参考官方提供的 [baseline](https://github.com/Callione/LLaVA-MOSS2)，训练多模态解题大模型。\
+注：在我们的方案中，只是将官方的LLava换成了llava-next。
+
+如果对你有用，欢迎 star~ 
